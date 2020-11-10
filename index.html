@@ -68,20 +68,28 @@
                                 <form class="form speaker-form">
                                     <div class="form-field">
                                         <label for="name">Имя</label>
-                                        <input type="text" name="name" id="name" autofocus>
+                                        <input class="form-box" type="text" name="name" id="name" autofocus>
                                     </div>
                                     <div class="form-field">
-                                        <label for="telefon">Телефон</label>
-                                        <input type="telefon" name="telefon" id="telefon" autofocus>
+                                        <label for="tel">Телефон</label>
+                                        <input class="form-box" type="tel" name="tel" id="tel" autofocus>
                                     </div>
                                     <div class="form-field">
-                                        <label for="post">Почта</label>
-                                        <input type="post" name="post" id="post" autofocus>
+                                        <label for="mail">Почта</label>
+                                        <input class="form-box" type="email" name="mail" id="mail" autofocus>
                                     </div>
-                                    <div class="form-field">
-                                        Комментарий
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <div class="form-comment">
+                                        Комментарий 
+                                        <textarea class="form-box-text" name="" id="" placeholder="Введите текст"></textarea>
                                     </div>
+
+                                    <div class="contract">
+                                        <input type="checkbox" name="post" id="post" autofocus>
+                                        <label class="contract-box" for="">Соглашаюсь с рассылкой и принимаю <a class="contract-link" href="">Условия договора</a></label>
+                                        
+                                    </div>
+                                    <div>
+                                    <button class="send-modal">Отправить</button></div>
                                 </form>
                             </div>
                             
@@ -350,22 +358,21 @@
 
             </div>
 
-            <div class="content-box">
+            <div class="content-box subscribe">
                 <p class="subscribe-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-                <div class="subscribe-box">
-                <form class="subscribe-footer">
-                    <input class="email" type="email" name="mail" id="mail" placeholder="   E-mail">
-                    <label for="mail"></label>
-                    
+                
+                    <form class="subscribe-footer">
+                        <div class="subscribe-box">
+                        <input class="email" type="email" name="mail" id="mail" placeholder="   E-mail">
+                        <label for="mail"></label>
+            
                         <button class="subscribe-btn" type="submit">Подписаться
-                            <svg class="subscribe-tlg" width="24" height="24">
-                                <use href="./images/m-sprite.svg#telegram"></use>
-                            </svg>
-                        </button>
-                    
-                    
-                </form>
-                </div>
+                            
+                        </button></div>
+            
+            
+                    </form>
+                
             </div>
         </div>
     </footer>
