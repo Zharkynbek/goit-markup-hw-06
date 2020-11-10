@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
         integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
         crossorigin="anonymous" />
@@ -63,6 +63,29 @@
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
                             <button class="iks btn-closed" data-modal-close>&#x2716;</button>
+                            <div class="modal-container">
+                                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                                <form class="form speaker-form">
+                                    <div class="form-field">
+                                        <label for="name">Имя</label>
+                                        <input type="text" name="name" id="name" autofocus>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="telefon">Телефон</label>
+                                        <input type="telefon" name="telefon" id="telefon" autofocus>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="post">Почта</label>
+                                        <input type="post" name="post" id="post" autofocus>
+                                    </div>
+                                    <div class="form-field">
+                                        Комментарий
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            
                         </div>
                     </div>
             </div>
@@ -325,6 +348,24 @@
                 </ul>
 
 
+            </div>
+
+            <div class="content-box">
+                <p class="subscribe-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                <div class="subscribe-box">
+                <form class="subscribe-footer">
+                    <input class="email" type="email" name="mail" id="mail" placeholder="   E-mail">
+                    <label for="mail"></label>
+                    
+                        <button class="subscribe-btn" type="submit">Подписаться
+                            <svg class="subscribe-tlg" width="24" height="24">
+                                <use href="./images/m-sprite.svg#telegram"></use>
+                            </svg>
+                        </button>
+                    
+                    
+                </form>
+                </div>
             </div>
         </div>
     </footer>

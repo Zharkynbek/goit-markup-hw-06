@@ -297,7 +297,6 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 20px;
   transform: translate(-50%, -50%);
   height: 581px;
   width: 528px;
@@ -314,7 +313,41 @@ a {
   border-radius: 50%;
   background-color: #fff;
   margin-left: auto;
+  margin-right: 8px;
+  margin-top: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.iks:hover {
+  color: var(--logo-color);
+}
+
+.modal-container {
+  width: 528px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modal-container h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form {
+  width: 448px;
+  padding: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .primery-div {
@@ -856,6 +889,56 @@ address {
   padding-bottom: 0;
   border-bottom: 0px;
   margin-right: 70px;
+}
+
+.subscribe-text {
+  margin-left: 93px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.145;
+  color: #fff;
+}
+
+.subscribe-footer {
+  margin-top: 20px;
+  margin-left: 93px;
+}
+
+.email {
+  width: 358px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--logo-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.subscribe-tlg {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  margin-left: 10px;
 }
 
 .link-info {
