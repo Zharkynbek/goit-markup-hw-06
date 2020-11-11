@@ -479,7 +479,9 @@ a {
   background-color: #2196f3;
   background-image: url("../images/galochka.svg");
   background-size: contain;
+  background-repeat: no-repeat;
   background-origin: border-box;
+  background-position: center;
 }
 
 .weg {
