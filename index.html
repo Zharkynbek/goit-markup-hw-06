@@ -65,27 +65,44 @@
                             <button class="iks btn-closed" data-modal-close>&#x2716;</button>
                             <div class="modal-container">
                                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
+
                                 <form class="form speaker-form">
                                     <div class="form-field">
-                                        <label for="name">Имя</label>
+                                        <label for="name" class="form-label">Имя</label>
+
+                                        <svg class="modal-icons" width="12" height="12">
+                                            <use href="./images/sprite.svg#person"></use>
+                                        </svg>
+
                                         <input class="form-box" type="text" name="name" id="name" autofocus>
+                                       
                                     </div>
+                                                                     
                                     <div class="form-field">
                                         <label for="tel">Телефон</label>
+                                        <svg class="modal-icons" width="13" height="13">
+                                            <use href="./images/sprite.svg#telefon"></use>
+                                        </svg>
                                         <input class="form-box" type="tel" name="tel" id="tel" autofocus>
                                     </div>
                                     <div class="form-field">
                                         <label for="mail">Почта</label>
+                                        <svg class="modal-icons" width="15" height="12">
+                                            <use href="./images/sprite.svg#post"></use>
+                                        </svg>
                                         <input class="form-box" type="email" name="mail" id="mail" autofocus>
                                     </div>
                                     <div class="form-comment">
                                         Комментарий 
-                                        <textarea class="form-box-text" name="" id="" placeholder="Введите текст"></textarea>
+                                        <textarea class="form-box-text" name="comment" id="comment" placeholder="Введите текст"></textarea>
                                     </div>
 
                                     <div class="contract">
-                                        <input type="checkbox" name="post" id="post" autofocus>
-                                        <label class="contract-box" for="">Соглашаюсь с рассылкой и принимаю <a class="contract-link" href="">Условия договора</a></label>
+                                        <label class="contract-box">
+                                        <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+                                        
+                                            <span class="galochka"></span>Соглашаюсь с рассылкой и принимаю<span class="weg">i</span>
+                                            <a class="contract-link" href="">Условия договора</a></label>
                                         
                                     </div>
                                     <div>
@@ -363,7 +380,7 @@
                 
                     <form class="subscribe-footer">
                         <div class="subscribe-box">
-                        <input class="email" type="email" name="mail" id="mail" placeholder="   E-mail">
+                        <input class="email" type="email" name="subscribe-mail" id="subscribe-mail" placeholder="   E-mail">
                         <label for="mail"></label>
             
                         <button class="subscribe-btn" type="submit">Подписаться

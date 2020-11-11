@@ -315,6 +315,8 @@ a {
   margin-left: auto;
   margin-right: 8px;
   margin-top: 8px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -344,6 +346,7 @@ a {
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -352,9 +355,7 @@ a {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.666;
-
   letter-spacing: 0.01em;
-
   color: #757575;
 }
 .form-box {
@@ -362,17 +363,38 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-
+  padding-left: 33px;
   color: #757575;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:hover > .modal-icons,
+.form-field:focus > .modal-icons {
+  fill: #2196f3;
+}
+
+.form-field:hover > .form-box,
+.form-field:focus > .form-box {
+  border: 1px solid #2196f3;
+}
+
+.form-comment:hover > .form-box-text,
+.form-comment:focus > .form-box-text {
+  border: 1px solid #2196f3;
 }
 
 .form-box-text {
+  cursor: pointer;
   padding: 12px 16px;
   height: 120px;
   border-radius: 4px;
   font-size: 12px;
   line-height: 1.666;
   letter-spacing: 0.01em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
@@ -383,6 +405,7 @@ a {
   line-height: 1.666;
   letter-spacing: 0.01em;
   margin-bottom: 20px;
+  color: #757575;
 }
 
 .send-modal {
@@ -421,7 +444,46 @@ a {
 }
 
 .contract-box {
+  display: flex;
+  align-items: center;
   margin-left: 9px;
+}
+
+.modal-icons {
+  position: absolute;
+  display: inline-block;
+  top: 66%;
+  left: 15px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.galochka {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  margin-right: 7px;
+  border: 2px solid #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .galochka {
+  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url("../images/galochka.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.weg {
+  opacity: 0;
 }
 
 .primery-div {
@@ -1017,6 +1079,7 @@ address {
   margin-left: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: transparent;
 }
 
 .subscribe-btn::after {
