@@ -320,7 +320,9 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.iks:hover {
+.iks:hover,
+.iks:focus {
+  outline: none;
   color: var(--logo-color);
 }
 
@@ -364,6 +366,7 @@ a {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 33px;
+  outline: transparent;
   color: #757575;
   cursor: pointer;
   transition-duration: 250ms;
@@ -372,6 +375,7 @@ a {
 
 .form-field:hover > .modal-icons,
 .form-field:focus > .modal-icons {
+  stroke: #2196f3;
   fill: #2196f3;
 }
 
@@ -385,6 +389,33 @@ a {
   border: 1px solid #2196f3;
 }
 
+.form-box:focus {
+  border: 1px solid #2196f3;
+}
+
+.form-box-text:focus {
+  border: 1px solid #2196f3;
+}
+
+.checkbox:checked .galochka:focus {
+  border: 1px solid #2196f3;
+}
+
+.contract-link:focus {
+  outline-color: #2196f3;
+}
+
+.send-modal:focus {
+  outline: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.form-box:focus + .modal-icons {
+  fill: #2196f3;
+}
+
 .form-box-text {
   cursor: pointer;
   padding: 12px 16px;
@@ -392,6 +423,7 @@ a {
   border-radius: 4px;
   font-size: 12px;
   line-height: 1.666;
+  outline: transparent;
   letter-spacing: 0.01em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -482,6 +514,11 @@ a {
   background-repeat: no-repeat;
   background-origin: border-box;
   background-position: center;
+}
+
+.contract-box {
+  cursor: pointer;
+  position: relative;
 }
 
 .weg {
@@ -675,6 +712,7 @@ a {
 
 .icons:hover,
 .icons:focus {
+  outline: none;
   fill: #ffffff;
   background-color: var(--logo-color);
 }
@@ -763,6 +801,7 @@ a {
 
 .company-icons:hover,
 .company-icons:focus {
+  outline: none;
   border: 1px solid #2196f3;
   color: var(--logo-color);
   fill: var(--logo-color);
@@ -1012,6 +1051,7 @@ address {
 
 .footer-icons:hover,
 .footer-icons:focus {
+  outline: none;
   background-color: var(--logo-color);
 }
 
@@ -1056,6 +1096,8 @@ address {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: #ffffff;
+  padding-left: 10px;
 }
 
 .subscribe-box {
@@ -1091,6 +1133,10 @@ address {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+.subscribe-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* .subscribe-btn {
