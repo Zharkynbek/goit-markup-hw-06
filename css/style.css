@@ -516,6 +516,16 @@ a {
   background-position: center;
 }
 
+.checkbox:focus + .galochka {
+  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url("../images/galochka.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+}
+
 .contract-box {
   cursor: pointer;
   position: relative;
