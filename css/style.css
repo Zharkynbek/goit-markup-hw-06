@@ -514,8 +514,26 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .checkbox:focus + .galochka {
+  border: 2px solid #2196f3;
+  background-color: #2196f3;
+  background-image: url("../images/galochka.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+} */
+
 .checkbox:checked + .galochka {
-  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url("../images/galochka.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+}
+
+.checkbox:checked:focus + .galochka {
   background-color: #2196f3;
   background-image: url("../images/galochka.svg");
   background-size: contain;
@@ -525,13 +543,11 @@ a {
 }
 
 .checkbox:focus + .galochka {
-  border-color: transparent;
-  background-color: #2196f3;
-  background-image: url("../images/galochka.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  background-position: center;
+  border: 2px solid #2196f3;
+}
+
+.checkbox:checked + .galochka {
+  border: 2px solid #2196f3;
 }
 
 .contract-box {
